@@ -1,0 +1,33 @@
+name : LifeCorePE
+main: LifeCorePE\Main
+version: "1.0.0"
+api: [1.0.0]
+author: LCraftPE
+
+commands:
+  heal:
+    permission: lc.heal
+    description: "Restaure la vie d'un joueur"
+  feed:
+    permission: lc.feed
+    description: "Restaure la barre de faim d'un joueur"
+  clear:
+    permission: lc.clear
+    description: "Reinitialise l'inventaire d'un joueur"
+  spawn:
+    permission: lc.spawn
+    description: "Teleporte au Spawn du serveur"
+
+permissions:
+  lc.heal:
+    default: op
+    description: Allow /heal
+  lc.feed:
+    default: op
+    description: Allow /feed
+  lc.clear:
+    default: op
+    description: Allow /clear
+  lc.spawn:
+    default: true
+    description: Allow /spawn
